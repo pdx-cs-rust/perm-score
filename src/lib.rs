@@ -14,11 +14,10 @@
 /// );
 /// assert_eq!((32, [3, 2, 1].as_ref()), (s, &*p));
 /// ```
-pub fn max_perm<T, F>(
-    seq: &[T],
-    mut score: F,
-) -> (i64, Vec<T>)
-    where T: Clone, F: FnMut(&[T]) -> i64
+pub fn max_perm<T, F>(seq: &[T], mut score: F) -> (i64, Vec<T>)
+where
+    T: Clone,
+    F: FnMut(&[T]) -> i64,
 {
     let mut max_score = score(seq);
     let mut seq = seq.to_vec();
