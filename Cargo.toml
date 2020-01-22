@@ -1,0 +1,8 @@
+[package]
+name = "perm-score"
+version = "0.1.0"
+authors = ["Bart Massey <bart.massey@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+permutohedron = "0.2.4"
